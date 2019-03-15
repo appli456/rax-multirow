@@ -4,7 +4,11 @@ import View from 'rax-view';
 
 class List extends Component {
   render() {
-    return <View>{this.getContent()}</View>;
+    const {
+      style,
+    } = this.props;
+
+    return <View style={style}>{this.getContent()}</View>;
   }
 
   getContent() {
